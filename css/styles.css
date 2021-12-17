@@ -1,0 +1,106 @@
+:root {
+    --colorFont: #e9bf3e;
+    --colorCard: #343d65;
+    --backgroundLight: #2a3050;
+    --backgroundDark: #121212;
+    --titleFeatureColor: #b00020;
+    --pokemonNameBackgroundColor: #f9a825;
+    --colorSecondaryFont: #dadbe2;
+    font-family: 'Montserrat'
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--backgroundDark);
+}
+
+p{
+    color: var(--colorFont);
+}
+
+#pokedex-logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--titleFeatureColor);
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+
+.pokedex-title{
+    display: inline-flex;
+    align-items: center;
+}
+
+.pokedex-title p{
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+}
+.pokeball-logo{
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+#pokemon-main{
+    margin: 1rem;
+}
+
+#pokemon-name{
+    display: flex;
+    padding: 0.3rem;
+    background-color: var(--pokemonNameBackgroundColor);
+    border-radius: 1rem;
+    margin: 1rem 0rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#pokemon-type{
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+}
+
+#pokemon-name p{
+    color: var(--backgroundDark);
+    font-size: 2rem;
+    font-weight: bolder;
+    margin: 0.5rem;
+}
+
+#pokemon-avatar{
+    display: flex;
+    justify-content: center;
+}
+#pokemon-picture{
+    width: 90vw;
+}
+
+#pokemon-stats{
+    margin-top: -2rem;
+    padding: 2rem;
+    background-color: var(--pokemonNameBackgroundColor);
+    border-radius: 1rem;
+}
+
+#pokemon-stats > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1.5rem;
+}
+
+#pokemon-stats > div > p{
+    color: var(--backgroundDark);
+    font-size: 1.5rem;
+    font-weight: bold;
+}
