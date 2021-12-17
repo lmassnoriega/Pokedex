@@ -56,6 +56,7 @@ p{
 
 #pokemon-main{
     margin: 1rem;
+    justify-content: center;
 }
 
 #pokemon-name{
@@ -85,8 +86,9 @@ p{
     display: flex;
     justify-content: center;
 }
+
 #pokemon-picture{
-    width: 90vw;
+    max-width: 90vw;
 }
 
 #pokemon-stats{
@@ -96,14 +98,14 @@ p{
     border-radius: 1rem;
 }
 
-#pokemon-stats > div{
+.pokemon-stat-group{
     display: flex;
     justify-content: space-around;
     align-items: center;
     margin: 1.5rem;
 }
 
-#pokemon-stats > div > p{
+.pokemon-stat-group > p{
     color: var(--backgroundDark);
     font-size: 1.5rem;
     font-weight: bold;
@@ -148,7 +150,40 @@ p{
 
 @media screen and (min-width: 768px) {
 
-    
+    #pokemon-main{
+        display: flex;
+        flex-direction: row nowrap;
+        justify-content: space-around;
+    }
+
+    #pokemon-feature{
+        margin: 1rem;
+        max-width: 45vw;
+    }
+
+    #pokemon-picture{
+        max-width: 45vw;
+        max-height: 80vh;
+    }
+
+    #pokemon-stats{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        
+        max-width: 45vw;
+        margin: 2rem;
+    }
+
+    .pokemon-stat-group{
+        flex-flow: column wrap; 
+        justify-content: center;       
+        min-width:15vw;
+    }
+
+    .pokemon-stat-group > p:last-child{
+        font-size: 2rem;
+    }
 
     .pokedex-container{
         display: flex;
