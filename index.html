@@ -8,7 +8,8 @@
     <link rel="shortcut icon" type="image/jpg" href="/img/static/favicon.ico"/>
     <link rel="stylesheet" href="/css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-    
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
     <header>    
@@ -18,8 +19,10 @@
                 <span><img class="pokeball-logo" src="/img/static/pokeballSVG.svg" alt=""></span>
                 <p>KEDEX_</p>
             </div>
-            <div>
-                <button class="navbar-search"></button>
+            <div class="navbar-search">
+                <button class="search-button">
+                    <i class="fa fa-search"></i>
+                </button>
             </div>
             
         </div>
@@ -28,46 +31,50 @@
         <section id="pokemon-feature">
             <div id="pokemon-name">
                 <img id="pokemon-type" src="/img/types/fire.svg" alt="" srcset="">
-                <p>CHARIZARD</p>
+                <p>charizard</p>
             </div>
-            <div id="pokemon-avatar">
+            <div id="pokemon-avatar" class="animate__animated animate__bounceInDown">
                 <img id="pokemon-picture" src="/img/pokemon/charizard.png" alt="charizard" srcset="">
             </div>
         </section>
         <section id="pokemon-stats">
-            <div id="pokemon-number">
-                <p>no</p>
-                <p>006</p>
+            <div class="pokemon-stat-group">
+                <p class="pokemon-stat-group-property">no</p>
+                <p class="pokemon-stat-group-propvalue">006</p>
             </div>
-            <div>
-                <p>level</p>
-                <p>100</p>
+            <div class="pokemon-stat-group">
+                <p class="pokemon-stat-group-property">level</p>
+                <p class="pokemon-stat-group-propvalue">100</p>
             </div>
-            <div>
-                <p>type</p>
-                <p>fire</p>
+            <div class="pokemon-stat-group">
+                <p class="pokemon-stat-group-property">type</p>
+                <p class="pokemon-stat-group-propvalue">fire</p>
             </div>
-            <div>
-                <p>hability</p>
-                <p>flames</p>
+            <div class="pokemon-stat-group">
+                <p class="pokemon-stat-group-property">hability</p>
+                <p class="pokemon-stat-group-propvalue">flames</p>
             </div>
-            <div>
-                <p>height</p>
-                <p>1.7 m</p>
+            <div class="pokemon-stat-group">
+                <p class="pokemon-stat-group-property">height</p>
+                <p class="pokemon-stat-group-propvalue">1.7 m</p>
             </div>
-            <div>
-                <p>weight</p>
-                <p>90.5 kg</p>
+            <div class="pokemon-stat-group">
+                <p class="pokemon-stat-group-property">weight</p>
+                <p class="pokemon-stat-group-propvalue">90.5 kg</p>
             </div>
-
         </section>
     </article>
     <footer>
-        <p>Others</p>
-        <section id="pokedex-container">
-            <button><img src="/img/pokemon/bulbasaur.png" alt="" srcset="" height="30" width="30"></button>
-
-        </section>
+        <div class="pokedex-container">
+            <p class="pokedex-container-placeholder">Others</p>
+            <section class="pokedex-container-inventory">
+                <article class="pokemon-card"><img class="pokemon-card-avatar" src="/img/pokemon/bulbasaur.png" alt="" srcset=""></article>
+                <article class="pokemon-card"><img class="pokemon-card-avatar" src="/img/pokemon/pikachu.png" alt="" srcset=""></article>
+                <article class="pokemon-card"><img class="pokemon-card-avatar" src="/img/pokemon/squirtle.png" alt="" srcset=""></article>
+                <article class="pokemon-card"><img class="pokemon-card-avatar" src="/img/pokemon/pidgey.png" alt="" srcset=""></article>
+            </section>
+        </div>
+        
     </footer>
     
 </body>
